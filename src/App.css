@@ -1,0 +1,44 @@
+/* Basic styling for the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Game container to arrange the cells in a grid */
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+
+/* Styling for each individual cell */
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  background-color: white;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Add a clicked effect to cells */
+.cell.clicked {
+  background-color: #f0f0f0;
+}
+
+/* Styling for the message section */
+.message {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
